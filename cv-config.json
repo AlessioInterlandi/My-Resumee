@@ -4,7 +4,7 @@
     "This file documents every configurable field.",
     "To apply changes in the browser, keep cv-config.js in sync",
     "(it wraps this exact data in `window.CV_CONFIG = { ... }`).",
-    "Then refresh Federico Gallucci CV.html."
+    "Then refresh Alessio Interlandi CV.html."
   ],
 
   "theme": {
@@ -58,7 +58,7 @@
   },
 
   "personal": {
-    "name":         "Federico Gallucci",
+    "name":         "Alessio Interlandi",
     "tagline":      "// ./bin/whoami --verbose",
 
     "role1":        "Founder @ deep_monolith",
@@ -66,10 +66,10 @@
     "role3":        "Live Service Multiplayer",
     "years":        "8+yrs",
 
-    "email":        "federico.gallucci@example.com",
-    "website":      "federicogallucci.dev",
+    "email":        "alessiointerlandi0@gmail.com,
+    "website":      "alessiointerlandi.dev",
     "linkedin":     "/in/federico-gallucci",
-    "github":       "@fgallucci",
+    "github":       "@alessiointerlandi",
     "location":     "Turin, IT",
     "locationNote": "remote-friendly",
 
@@ -98,6 +98,6 @@
     "_comment": "line1 accepts inline HTML. line2 is plain text. email used in both the mail command and the mailto href.",
     "line1": "// Open to senior or lead roles in <span class=\"acc\">live service multiplayer</span>.",
     "line2": "// Remote or Turin-based. I own verticals — client to cloud, design to live ops.",
-    "email": "federico.gallucci@example.com"
+    "email": "alessiointerlandi0@gmail.com"
   }
 }
