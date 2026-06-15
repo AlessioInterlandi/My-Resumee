@@ -97,6 +97,6 @@ window.CV_CONFIG = {
   closing: {
     line1: "// Open to senior or lead roles in <span class=\"acc\">live service multiplayer</span>.",
     line2: "// Remote. I own verticals — client to cloud, design to live ops.",
-    email: "alessio.interlandi.97@gmail.com"
+    email: "alessiointerlandi0@gmail.com"
   }
 };
