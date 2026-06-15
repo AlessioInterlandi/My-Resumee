@@ -1,12 +1,12 @@
 // =============================================================
 //  cv-config.js  —  CV Configuration
-//  Edit this file, then refresh Federico Gallucci CV.html.
+//  Edit this file, then refresh Alessio Interlandi CV.html.
 //
 //  COLORS     → theme.colors.*
 //  FONTS      → theme.fonts.mono / sans / googleFonts
 //  SECTION ORDER → layout.page1 / page2
 //  PERSONAL INFO → personal.*
-//  ABOUT TEXT  → about.*          (para1/para2 support HTML)
+//  ABOUT TEXT  → about.* (para1/para2 support HTML)
 //  METRICS    → metrics array
 //  CLOSING    → closing.*
 //
@@ -35,77 +35,46 @@ window.CV_CONFIG = {
 
       // ── Borders ───────────────────────────────────────────
       border:     "#1f2630",
-      borderHot:  "#2a323e",   // used on flagship project cards
+      borderHot:  "#2a323e",
 
-      // ── Text ──────────────────────────────────────────────
-      text:       "#d4dae3",
-      textStrong: "#f0f3f7",
-      textDim:    "#8b97a8",
-      textMuted:  "#5a6675"
+      // ── Text colors ───────────────────────────────────────
+      text:       "#d4dae3",   // general body text
+      textStrong: "#f0f3f7",   // headings / active text
+      textDim:    "#8b97a8",   // comments, descriptions
+      textMuted:  "#5a6675"    // line numbers, braces, inactive UI
     },
 
     fonts: {
-      // Monospace — used for prompts, code, headings
-      // To switch: e.g. "'Fira Code', monospace"
-      mono: "'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace",
-
-      // Sans-serif — used for body paragraphs
-      // To switch: e.g. "'DM Sans', sans-serif"
-      sans: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
-
-      // Update this URL whenever you change the font families above.
-      // Build your URL at: https://fonts.google.com
+      mono: '"JetBrains Mono", "Fira Code", monospace',
+      sans: '"Inter", system-ui, sans-serif',
       googleFonts: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap"
     }
-
   },
 
   // ----------------------------------------------------------
-  //  LAYOUT  (section order per page)
-  //  Valid page1 IDs : "hero" | "about" | "metrics" | "stack"
-  //  Valid page2 IDs : "flagships" | "others" | "experience" | "closing"
-  //  Remove an ID to hide that section entirely.
+  //  LAYOUT & CONTENT SECTIONS
   // ----------------------------------------------------------
   layout: {
-    page1: ["hero", "about", "metrics",  "flagships"],
-    page2: ["experience", "others", "stack","closing"]
+    page1: ["experience"],
+    page2: ["projects", "education_awards"]
   },
 
   // ----------------------------------------------------------
   //  PERSONAL INFO
   // ----------------------------------------------------------
   personal: {
-    name:         "Federico Gallucci",
-    tagline:      "// ./bin/about-me --verbose",
-
-    // Header roles (plain text)
-    role1:        "Senior Unity Engineer",
-    role2:        "Live Service Multiplayer",
-    years:        "8+yrs",
-
-    // Contact info
-    email:        "federico.gallucci.97@gmail.com",
-    //website:      "federicogallucci.dev",
-    linkedin:     "/in/federico-gallucci-safriaduo",
-    github:       "@safriaduo",
-    location:     "Turin, IT",
-    locationNote: "remote-friendly",
-
-    // Toolbar / footer meta
-    version:      "v2026.05",
-    status:       "open to senior/lead roles",
-
-    // Banner strip — add or remove names freely
-    backedBy: ["Microsoft", "Sony/Soneium", "Iskra", "SEI", "Startale", "Quickload"]
+    fullName: "Alessio Interlandi",
+    title:    "Senior Unity Engineer // Full-Stack Multiplayer",
+    location: "Turin, Italy (Open to Remote)",
+    website:  "https://github.com/alessiointerlandi",
+    backedBy: ["Microsoft", "Sony Soneium", "Iskra", "SEI", "Startale"]
   },
 
   // ----------------------------------------------------------
-  //  ABOUT  (para1 / para2 / footer accept inline HTML)
+  //  ABOUT / SUMMARY  (Accepts inline HTML)
   // ----------------------------------------------------------
   about: {
-    headline: "I build multiplayer live service games and the infrastructure that keeps them running at scale.",
-
-    para1: "Over the last years, I’ve designed, developed and shipped competitive live service games backed by companies and organizations including Startale and Soneium (by Sony), korean game publisher ISKRA, SEI and Quickload (backed by Microsoft Xbox).",
+    para1: "I am a <span class=\"text-strong\">Senior Unity Engineer</span> and backend developer with 8+ years of technical experience. I founded <span class=\"text-strong\">Deep Monolith</span>, an independent game studio where we designed, engineered, and operated real-time multiplayer titles and web3 gaming infrastructure. Our systems powered experiences backed by companies and organizations including Startale and Soneium (by Sony), korean game publisher ISKRA, SEI and Quickload (backed by Microsoft Xbox).",
 
     para2: "My stack: <span class=\"mono-inline\">Unity</span> for client and gameplay, <span class=\"mono-inline\">Nakama + Go/JS</span> for backend, <span class=\"mono-inline\">AWS + Terraform</span> for infrastructure. I design the systems that make live service games work: matchmaking, ranking ladders, seasonal content, Battle Pass, quest systems, game economies — then operate them post-launch using telemetry.",
 
@@ -128,7 +97,6 @@ window.CV_CONFIG = {
   closing: {
     line1: "// Open to senior or lead roles in <span class=\"acc\">live service multiplayer</span>.",
     line2: "// Remote. I own verticals — client to cloud, design to live ops.",
-    email: "federico.gallucci.97@gmail.com"
+    email: "alessio.interlandi.97@gmail.com"
   }
-
 };

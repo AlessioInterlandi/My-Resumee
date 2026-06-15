@@ -1,4 +1,4 @@
-# Federico Gallucci — LinkedIn Profile Copy
+#Alessio Interlandi — LinkedIn Profile Copy
 **Version 3.0 | May 2026 — Revised with Deep Monolith brand intelligence**
 *Aligned with brand-guidelines.md v1.0 + deep-monolith-master.txt*
 
