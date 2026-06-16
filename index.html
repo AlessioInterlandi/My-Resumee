@@ -313,22 +313,19 @@
   /* ── Footer ── */
   .footer { margin-top: 8px; display: flex; justify-content: space-between; align-items: center; font-family: var(--mono); font-size: 8.5px; color: var(--text-muted); letter-spacing: 0.12em; flex-shrink: 0; }
   .footer .acc { color: var(--accent); }
-  /* Hidden by user request: hide all projects (games), work experience sections and metrics */
+  /* Hidden by user request: hide projects (games) and metrics — keep experience visible */
   [data-section="flagships"],
   [data-section="others"],
-  [data-section="experience"],
   [data-section="metrics"] {
     display: none !important;
   }
-    /* Also hide when printing / exporting to PDF */
+    /* Also hide projects/metrics when printing / exporting to PDF */
     @media print {
       .proj,
       .proj.flagship,
       .proj.micro,
       [data-section="flagships"],
       [data-section="others"],
-      .exp,
-      [data-section="experience"],
       [data-section="metrics"] {
         display: none !important;
       }
